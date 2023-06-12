@@ -1,5 +1,4 @@
 FROM ubuntu;
-MAINTAINER "mk"
 
 RUN apt update && apt install apache2
 
