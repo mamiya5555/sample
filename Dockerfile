@@ -1,7 +1,6 @@
-FROM ubuntu
+FROM ubuntu;
+MAINTAINER "mk"
 
-RUN echo "Hello, world this mean it work"
-RUN echo "this is next line after that"
+RUN apt update && apt install apache2
 
-
-
+COPY index.html /var/www/html/
