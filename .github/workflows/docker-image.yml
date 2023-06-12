@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sample:latest
+      run: docker build . --file Dockerfile --tag mengkheang55/sample:latest
     - name: Push Image to the repository
       run: docker login -u mengkheang55 -p ${{ secrets.DOCKER_TOKEN }} && docker push mengkheang55/sample:latest
