@@ -1,4 +1,4 @@
-FROM ubuntu;
+FROM ubuntu
 
 RUN apt update && apt install apache2
 
