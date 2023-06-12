@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag sample:$(date +%s)
     - name: Push Image to the repository
-      run: docker push sample:$(date + %s)
+      run: docker login -u mengkheang55 -p ${{ secrets.DOCKER_TOKEN }} && docker push sample:$(date + %s)
